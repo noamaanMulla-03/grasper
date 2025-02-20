@@ -3,6 +3,7 @@ import { useAppSelector } from '../app/hooks';
 import useAuth from '../hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import { EuiFlexGroup, EuiCard, EuiImage, EuiFlexItem } from '@elastic/eui';
+import Header from '../components/Header';
 import dashboard1 from '../assets/dashboard1.png';
 import dashboard2 from '../assets/dashboard2.png';
 import dashboard3 from '../assets/dashboard3.png';
@@ -20,6 +21,7 @@ function Dashboard() {
                     flexDirection: 'column',
                 }}
             >
+                <Header />
                 <EuiFlexGroup
                     justifyContent="center"
                     alignItems="center"
